@@ -61,6 +61,13 @@ export default () => {
             <footer>
                 Feito por Guilherme Kopp
             </footer>
+
+            {movieList.length <= 0 &&
+            <div className="loading">
+                <img src="https://media0.giphy.com/media/hRLz2uLh5AX1zPsjOS/giphy.gif?cid=790b7611cc4f3777c199f7d94b62664df48c8803d358ffee&rid=giphy.gif&ct=g" alt="Carregando" />
+            </div>
+            }
         </div>
+
     );
 }

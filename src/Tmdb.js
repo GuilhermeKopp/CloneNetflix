@@ -13,8 +13,8 @@ export default {
         return [
             {
                 slug: 'originals',
-                title: 'Originais da Netflix',
-                items: await basicFecth(`/discover/tv?with_networks=213&language=pt-BR&api_key=${API_KEY}`)
+                title: 'Originais da Disney',
+                items: await basicFecth(`/discover/tv?with_networks=2739&language=pt-BR&language=pt-BR&api_key=${API_KEY}`)
             },
             {
                 slug: 'trending',
@@ -47,9 +47,9 @@ export default {
                 items: await basicFecth(`/discover/movie?with_genres=10749&language=pt-BR&api_key=${API_KEY}`)
             },
             {
-                slug: 'documentary',
-                title: 'Documentários',
-                items: await basicFecth(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
+                slug: 'drama',
+                title: 'Drama',
+                items: await basicFecth(`/discover/movie?with_genres=18&language=pt-BR&api_key=${API_KEY}`)
             }
         ];
     },
